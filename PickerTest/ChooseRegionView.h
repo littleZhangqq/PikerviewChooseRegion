@@ -8,7 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ChooseRegionView : UIView 
+@interface ChooseRegionView : UIView
+
+@property (nonatomic, copy) void(^chooseBlock)(NSString *region);
 
 -(void)show;
 -(void)hidden;

@@ -12,6 +12,7 @@
 @interface ViewController ()
 
 @property(nonatomic, strong) ChooseRegionView *chooseView;
+@property(nonatomic, strong) UIButton *button;
 
 @end
 
@@ -21,15 +22,15 @@
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
     
-    UIButton *btn = [UIButton buttonWithType:0];
-    btn.backgroundColor = [UIColor purpleColor];
-    [btn setTitle:@"弹出" forState:0];
-    [btn setTitleColor:[UIColor blackColor] forState:0];
-    btn.titleLabel.font = [UIFont systemFontOfSize:14];
-    [btn addTarget:self action:@selector(btnClick) forControlEvents:UIControlEventTouchUpInside];
-    [self.view addSubview:btn];
+    _button = [UIButton buttonWithType:0];
+    _button.backgroundColor = [UIColor purpleColor];
+    [_button setTitle:@"弹出" forState:0];
+    [_button setTitleColor:[UIColor blackColor] forState:0];
+    _button.titleLabel.font = [UIFont systemFontOfSize:10];
+    [_button addTarget:self action:@selector(btnClick) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:_button];
     
-    [btn makeConstraints:^(MASConstraintMaker *make) {
+    [_button makeConstraints:^(MASConstraintMaker *make) {
         make.center.equalTo(self.view);
         make.size.equalTo(CGSizeMake(100, 50));
     }];
@@ -43,6 +44,11 @@
         [_chooseView makeConstraints:^(MASConstraintMaker *make) {
             make.edges.equalTo(self.view);
         }];
+        
+        __weak  typeof(self) weakSelf = self;
+        _chooseView.chooseBlock = ^(NSString *region) {
+            [weakSelf.button setTitle:region forState:0];
+        };
     }
     return _chooseView;
 }

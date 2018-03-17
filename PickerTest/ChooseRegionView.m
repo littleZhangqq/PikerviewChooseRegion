@@ -221,7 +221,10 @@
 
 -(void)consureClick{
     [self hidden];
-    NSLog(@"%@-%@-%@",_province,_city,_region);
+    NSLog(@"选择地址是%@-%@-%@",_province,_city,_region);
+    if (self.chooseBlock) {
+        self.chooseBlock([NSString stringWithFormat:@"%@-%@-%@",_province,_city,_region]);
+    }
 }
 
 -(void)show{
