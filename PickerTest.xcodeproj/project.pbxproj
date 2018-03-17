@@ -7,15 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8A8DBE2A7C83991DCFEB63FC /* libPods-PickerTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 80B7DF9498AB806D00AB1442 /* libPods-PickerTest.a */; };
 		F0607DD9205D13CA00DE6C05 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F0607DD8205D13CA00DE6C05 /* AppDelegate.m */; };
 		F0607DDC205D13CA00DE6C05 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F0607DDB205D13CA00DE6C05 /* ViewController.m */; };
 		F0607DDF205D13CA00DE6C05 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0607DDD205D13CA00DE6C05 /* Main.storyboard */; };
 		F0607DE1205D13CA00DE6C05 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0607DE0205D13CA00DE6C05 /* Assets.xcassets */; };
 		F0607DE4205D13CA00DE6C05 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0607DE2205D13CA00DE6C05 /* LaunchScreen.storyboard */; };
 		F0607DE7205D13CA00DE6C05 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F0607DE6205D13CA00DE6C05 /* main.m */; };
+		F0607DEF205D13FF00DE6C05 /* ChooseRegionView.m in Sources */ = {isa = PBXBuildFile; fileRef = F0607DEE205D13FE00DE6C05 /* ChooseRegionView.m */; };
+		F0607DF2205D142900DE6C05 /* RegionRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = F0607DF0205D142800DE6C05 /* RegionRecord.m */; };
+		F0607DF4205D143C00DE6C05 /* address.plist in Resources */ = {isa = PBXBuildFile; fileRef = F0607DF3205D143B00DE6C05 /* address.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7C2387FE24D32D289515AA9B /* Pods-PickerTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PickerTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PickerTest/Pods-PickerTest.debug.xcconfig"; sourceTree = "<group>"; };
+		80B7DF9498AB806D00AB1442 /* libPods-PickerTest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PickerTest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AAD3F3FB598DFC1741AB53B3 /* Pods-PickerTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PickerTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-PickerTest/Pods-PickerTest.release.xcconfig"; sourceTree = "<group>"; };
 		F0607DD4205D13CA00DE6C05 /* PickerTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PickerTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0607DD7205D13CA00DE6C05 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F0607DD8205D13CA00DE6C05 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -26,6 +33,12 @@
 		F0607DE3205D13CA00DE6C05 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F0607DE5205D13CA00DE6C05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F0607DE6205D13CA00DE6C05 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F0607DED205D13FE00DE6C05 /* ChooseRegionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChooseRegionView.h; sourceTree = "<group>"; };
+		F0607DEE205D13FE00DE6C05 /* ChooseRegionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChooseRegionView.m; sourceTree = "<group>"; };
+		F0607DF0205D142800DE6C05 /* RegionRecord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegionRecord.m; sourceTree = "<group>"; };
+		F0607DF1205D142800DE6C05 /* RegionRecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegionRecord.h; sourceTree = "<group>"; };
+		F0607DF3205D143B00DE6C05 /* address.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = address.plist; sourceTree = "<group>"; };
+		F0607DF5205D1A1500DE6C05 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +46,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A8DBE2A7C83991DCFEB63FC /* libPods-PickerTest.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1C0AC905352212FD20D0F50F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				80B7DF9498AB806D00AB1442 /* libPods-PickerTest.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B71215FDC2A135EF94C6A7A7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7C2387FE24D32D289515AA9B /* Pods-PickerTest.debug.xcconfig */,
+				AAD3F3FB598DFC1741AB53B3 /* Pods-PickerTest.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		F0607DCB205D13CA00DE6C05 = {
 			isa = PBXGroup;
 			children = (
 				F0607DD6205D13CA00DE6C05 /* PickerTest */,
 				F0607DD5205D13CA00DE6C05 /* Products */,
+				B71215FDC2A135EF94C6A7A7 /* Pods */,
+				1C0AC905352212FD20D0F50F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,6 +91,11 @@
 		F0607DD6205D13CA00DE6C05 /* PickerTest */ = {
 			isa = PBXGroup;
 			children = (
+				F0607DF3205D143B00DE6C05 /* address.plist */,
+				F0607DED205D13FE00DE6C05 /* ChooseRegionView.h */,
+				F0607DEE205D13FE00DE6C05 /* ChooseRegionView.m */,
+				F0607DF1205D142800DE6C05 /* RegionRecord.h */,
+				F0607DF0205D142800DE6C05 /* RegionRecord.m */,
 				F0607DD7205D13CA00DE6C05 /* AppDelegate.h */,
 				F0607DD8205D13CA00DE6C05 /* AppDelegate.m */,
 				F0607DDA205D13CA00DE6C05 /* ViewController.h */,
@@ -67,6 +105,7 @@
 				F0607DE2205D13CA00DE6C05 /* LaunchScreen.storyboard */,
 				F0607DE5205D13CA00DE6C05 /* Info.plist */,
 				F0607DE6205D13CA00DE6C05 /* main.m */,
+				F0607DF5205D1A1500DE6C05 /* PrefixHeader.pch */,
 			);
 			path = PickerTest;
 			sourceTree = "<group>";
@@ -78,9 +117,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F0607DEA205D13CA00DE6C05 /* Build configuration list for PBXNativeTarget "PickerTest" */;
 			buildPhases = (
+				00C5196F744C6D6333E8752A /* [CP] Check Pods Manifest.lock */,
 				F0607DD0205D13CA00DE6C05 /* Sources */,
 				F0607DD1205D13CA00DE6C05 /* Frameworks */,
 				F0607DD2205D13CA00DE6C05 /* Resources */,
+				9D6F157F82BFEB729473E78E /* [CP] Embed Pods Frameworks */,
+				8F76033C0ECA71662876A2C2 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -130,6 +172,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F0607DE4205D13CA00DE6C05 /* LaunchScreen.storyboard in Resources */,
+				F0607DF4205D143C00DE6C05 /* address.plist in Resources */,
 				F0607DE1205D13CA00DE6C05 /* Assets.xcassets in Resources */,
 				F0607DDF205D13CA00DE6C05 /* Main.storyboard in Resources */,
 			);
@@ -137,14 +180,67 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		00C5196F744C6D6333E8752A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PickerTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8F76033C0ECA71662876A2C2 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PickerTest/Pods-PickerTest-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9D6F157F82BFEB729473E78E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PickerTest/Pods-PickerTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F0607DD0205D13CA00DE6C05 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				F0607DDC205D13CA00DE6C05 /* ViewController.m in Sources */,
+				F0607DEF205D13FF00DE6C05 /* ChooseRegionView.m in Sources */,
 				F0607DE7205D13CA00DE6C05 /* main.m in Sources */,
 				F0607DD9205D13CA00DE6C05 /* AppDelegate.m in Sources */,
+				F0607DF2205D142900DE6C05 /* RegionRecord.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,10 +372,12 @@
 		};
 		F0607DEB205D13CA00DE6C05 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7C2387FE24D32D289515AA9B /* Pods-PickerTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6BYJ87DZP3;
+				GCC_PREFIX_HEADER = /Users/zhangqiang/Desktop/PickerTest/PickerTest/PrefixHeader.pch;
 				INFOPLIST_FILE = PickerTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.newXDY.PickerTest;
@@ -290,10 +388,12 @@
 		};
 		F0607DEC205D13CA00DE6C05 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AAD3F3FB598DFC1741AB53B3 /* Pods-PickerTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6BYJ87DZP3;
+				GCC_PREFIX_HEADER = /Users/zhangqiang/Desktop/PickerTest/PickerTest/PrefixHeader.pch;
 				INFOPLIST_FILE = PickerTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.newXDY.PickerTest;
